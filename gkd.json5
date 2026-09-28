@@ -29,7 +29,7 @@
               name: '领取成功返回',
               action: 'back',
               matches: ['[text*="已成功领取奖励"]',],
-              activityIds: ['com.yxcorp.gifshow.ad.neo.video.award.AwardVideoPlayActivity',]
+              activityIds: ['com.yxcorp.gifshow.ad.neo.video.award.AwardVideoPlayActivity',],
               actionDelay: 2000,},
 
             {
