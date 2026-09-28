@@ -7,8 +7,6 @@
   updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5?token=GHSAT0AAAAAAEKQ5C5DHP22HYNQAAR2HKZQ2V2TOQA',
   checkUpdateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5?token=GHSAT0AAAAAAEKQ5C5DHP22HYNQAAR2HKZQ2V2TOQA',
 
-  
-
   categories: [],
 
   globalGroups: [],
@@ -28,22 +26,23 @@
               key: 0,
               name: '领取成功返回',
               action: 'back',
-              matches: ['[text*="已成功领取奖励"]',],
-              activityIds: ['com.yxcorp.gifshow.ad.neo.video.award.AwardVideoPlayActivity',],
-              actionDelay: 2000,},
+              matches: ['[text*="已成功领取奖励"]'],
+              activityIds: ['com.yxcorp.gifshow.ad.neo.video.award.AwardVideoPlayActivity'],
+              actionDelay: 2000
+            },
 
             {
               key: 1,
               name: '返回后点击去看广告',
               preKeys: [0],
               action: 'click',
-              matches: [ '[text*="去看广告"]', ],
+              matches: ['[text*="去看广告"]'],
               actionDelay: 2000,
               activityIds: [
-                'com.yxcorp.gifshow.webview.KwaiYodaWebViewActivity',
-              ],
-            },
-          ],
+                'com.yxcorp.gifshow.webview.KwaiYodaWebViewActivity'
+              ]
+            }
+          ]
         },
 
         {
@@ -54,7 +53,7 @@
 
           activityIds: [
             'com.yxcorp.gifshow.HomeActivity',
-            'com.yxcorp.gifshow.detail.PhotoDetailActivity',
+            'com.yxcorp.gifshow.detail.PhotoDetailActivity'
           ],
 
           rules: [
@@ -67,22 +66,22 @@
               swipeArg: {
                 start: {
                   x: '540',
-                  y: '1700',
+                  y: '1700'
                 },
 
                 end: {
                   x: '540',
-                  y: '500',
+                  y: '500'
                 },
 
-                duration: 300,
+                duration: 300
               },
 
               matches: [
-                '[text*="免费看"][visibleToUser=true]',
+                '[text*="免费看"][visibleToUser=true]'
               ],
 
-              actionCd: 600000,
+              actionCd: 600000
             },
 
             {
@@ -94,20 +93,20 @@
               swipeArg: {
                 start: {
                   x: '540',
-                  y: '1700',
+                  y: '1700'
                 },
 
                 end: {
                   x: '540',
-                  y: '500',
+                  y: '500'
                 },
 
-                duration: 300,
+                duration: 300
               },
 
               matches: [
-                '[text*="上滑继续观看"][visibleToUser=true]',
-              ],
+                '[text*="上滑继续观看"][visibleToUser=true]'
+              ]
             },
 
             {
@@ -119,24 +118,24 @@
               swipeArg: {
                 start: {
                   x: '540',
-                  y: '1700',
+                  y: '1700'
                 },
 
                 end: {
                   x: '540',
-                  y: '500',
+                  y: '500'
                 },
 
-                duration: 300,
+                duration: 300
               },
 
               matches: [
-                '[text*="立即跳转"][visibleToUser=true]',
-              ],
-            },
-          ],
-        },
-      ],
-    },
-  ],
+                '[text*="立即跳转"][visibleToUser=true]'
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
