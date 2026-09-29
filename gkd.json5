@@ -1,7 +1,7 @@
 {
   id: 426,
   name: '墨白',
-  version: 2,
+  version: 4,
   author: '墨白',
 
   updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5',
