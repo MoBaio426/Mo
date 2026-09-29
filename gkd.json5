@@ -14,12 +14,10 @@
     {
       id: 'com.smile.gifmaker',
       name: '快手',
-
       groups: [
         {
           key: 0,
           name: '快手任务广告完成后自动继续',
-
           rules: [
             {
               key: 0,
@@ -46,14 +44,11 @@
         {
           key: 2,
           name: '快手-自动上滑跳过',
-
           fastQuery: true,
-
           activityIds: [
             'com.yxcorp.gifshow.HomeActivity',
             'com.yxcorp.gifshow.detail.PhotoDetailActivity'
           ],
-
           rules: [
             {
               key: 3,
@@ -68,51 +63,17 @@
                   x: '540',
                   y: '500'
                 },
-                duration: 300
+                duration: 2000
               },
               matches: [
-                '[text*="免费看"][visibleToUser=true]'
+                '[text*="免费看"][visibleToUser=true]',
+                '[text*="上滑继续观看"][visibleToUser=true]',
+                '[text*="立即跳转"][visibleToUser=true]',
+                '[text*="微信跳转"][visibleToUser=true]'
               ],
+              actionDelay: 2000,
               actionCd: 600000
             },
-            {
-              key: 4,
-              name: '上滑继续观看',
-              action: 'swipe',
-              swipeArg: {
-                start: {
-                  x: '540',
-                  y: '1700'
-                },
-                end: {
-                  x: '540',
-                  y: '500'
-                },
-                duration: 300
-              },
-              matches: [
-                '[text*="上滑继续观看"][visibleToUser=true]'
-              ]
-            },
-            {
-              key: 5,
-              name: '立即跳转',
-              action: 'swipe',
-              swipeArg: {
-                start: {
-                  x: '540',
-                  y: '1700'
-                },
-                end: {
-                  x: '540',
-                  y: '500'
-                },
-                duration: 300
-              },
-              matches: [
-                '[text*="立即跳转"][visibleToUser=true]'
-              ]
-            }
           ]
         }
       ]
