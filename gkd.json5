@@ -1,7 +1,7 @@
 {
   id: 426,
   name: '墨白',
-  version: 8,
+  version: 1.1,
   author: '墨白',
 
   updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5',
@@ -25,7 +25,7 @@
               action: 'back',
               matches: ['[text*="已成功领取奖励"]'],
               activityIds: ['com.yxcorp.gifshow.ad.neo.video.award.AwardVideoPlayActivity'],
-              actionDelay: 2000
+              actionDelay: 1000
             },
             {
               key: 1,
@@ -63,12 +63,12 @@
                   x: '540',
                   y: '500'
                 },
-                duration: 2000
+                duration: 100
               },
               matches: [
-                '[text*="免费看"||text*="上滑继续观看"||text*="立即跳转"||text*="微信试玩"||text*="看全集"][visibleToUser=true]'
+                '[text*="免费看"||text*="上滑继续观看"||text*="立即跳转"||text*="微信试玩"||text*="看全集"||text*="免费观看"][visibleToUser=true]'
               ],    
-              actionCd: 600000
+              actionCd:10000
             }
           ]
         }
