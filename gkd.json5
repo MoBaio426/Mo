@@ -4,8 +4,8 @@
   version: 3,
   author: '墨白',
 
-  updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5?token=GHSAT0AAAAAAEKQ5C5C52VSBVXGHMVZOOG42V3NEDA',
-  checkUpdateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5?token=GHSAT0AAAAAAEKQ5C5C52VSBVXGHMVZOOG42V3NEDA',
+  updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5',
+  checkUpdateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5',
 
   categories: [],
   globalGroups: [],
