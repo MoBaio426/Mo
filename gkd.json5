@@ -1,7 +1,7 @@
 {
   id: 426,
   name: '墨白',
-  version: 5,
+  version: 6,
   author: '墨白',
 
   updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5',
@@ -33,7 +33,7 @@
               preKeys: [0],
               action: 'click',
               matches: ['[text*="去看广告"]'],
-              actionDelay: 1000,
+              actionDelay: 1600,
               activityIds: [
                 'com.yxcorp.gifshow.webview.KwaiYodaWebViewActivity'
               ]
