@@ -1,7 +1,7 @@
 {
   id: 426,
   name: '墨白',
-  version: 4,
+  version: 5,
   author: '墨白',
 
   updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5',
@@ -33,7 +33,7 @@
               preKeys: [0],
               action: 'click',
               matches: ['[text*="去看广告"]'],
-              actionDelay: 2000,
+              actionDelay: 1000,
               activityIds: [
                 'com.yxcorp.gifshow.webview.KwaiYodaWebViewActivity'
               ]
@@ -69,7 +69,8 @@
                 '[text*="免费看"][visibleToUser=true]',
                 '[text*="上滑继续观看"][visibleToUser=true]',
                 '[text*="立即跳转"][visibleToUser=true]',
-                '[text*="微信跳转"][visibleToUser=true]'
+                '[text*="微信跳转"][visibleToUser=true]',
+                '[text*="看全集"][visibleToUser=true]'
               ],
               actionDelay: 2000,
               actionCd: 600000
