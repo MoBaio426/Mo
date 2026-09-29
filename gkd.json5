@@ -1,7 +1,7 @@
 {
   id: 426,
   name: '墨白',
-  version: 6,
+  version: 7,
   author: '墨白',
 
   updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5',
@@ -71,8 +71,7 @@
                 '[text*="立即跳转"][visibleToUser=true]',
                 '[text*="微信跳转"][visibleToUser=true]',
                 '[text*="看全集"][visibleToUser=true]'
-              ],
-              actionDelay: 2000,
+              ],    
               actionCd: 600000
             }
           ]
