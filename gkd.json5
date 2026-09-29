@@ -1,7 +1,7 @@
 {
   id: 426,
   name: '墨白',
-  version: 9,
+  version: 10,
   author: '墨白',
 
   updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5',
@@ -68,7 +68,7 @@
               matches: [
                 '[text*="免费看"||text*="上滑继续观看"||text*="立即跳转"||text*="微信试玩"||text*="看全集"||text*="免费观看"][visibleToUser=true]'
               ],    
-              actionCd:10000
+              actionCd:300000
             }
           ]
         }
