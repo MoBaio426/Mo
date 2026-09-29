@@ -73,7 +73,7 @@
               ],
               actionDelay: 2000,
               actionCd: 600000
-            },
+            }
           ]
         }
       ]
