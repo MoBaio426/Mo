@@ -1,7 +1,7 @@
 {
   id: 426,
   name: '墨白',
-  version: 12,
+  version: 11,
   author: '墨白',
 
   updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5',
@@ -17,6 +17,7 @@
       groups: [
         { 
          //广告领取奖励(快手)
+         key:1
           name: '快手任务广告完成后自动继续',
           rules: [
             
@@ -45,6 +46,7 @@
         
         //广告视频自动上滑(快手)
         {
+          key:2
           name: '快手-自动上滑跳过',
           fastQuery: true,
           activityIds: [
@@ -76,7 +78,7 @@
            
            //AI短剧广告上滑 (快手)          
             {
-               key: 2,
+               key: 3,
                name: '上滑短视频广告',
                action: 'swipe',
                swipeArg: {
@@ -100,15 +102,15 @@
      },
       {
         id: 'com.kuaishou.nebula',
-       name: '快手极速版',
-       groups: [
+        name: '快手极速版',
+        groups: [
         {
+         //广告任务领取奖励(快手极速版)
           key: 1,
           name: '快手任务广告完成后自动继续',
           rules: [
             
-            {
-            //广告任务领取奖励(快手极速版)
+            {            
               key: 0,
               name: '领取成功返回',
               action: 'back',
@@ -165,7 +167,7 @@
            
             {
             //AI短剧广告视频上滑(快手极速版)
-              key: 2,
+              key: 3,
               name: '上滑短视频广告',
               action: 'swipe',
               swipeArg: {
