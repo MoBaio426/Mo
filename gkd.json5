@@ -15,8 +15,8 @@
       id: 'com.smile.gifmaker',
       name: '快手',
       groups: [
-        {
-          key: 1,
+        { 
+         #广告领取奖励(快手)
           name: '快手任务广告完成后自动继续',
           rules: [
             
@@ -42,9 +42,9 @@
             }
           ]
         },
-
+        
+        #广告视频自动上滑(快手)
         {
-          key: 2,
           name: '快手-自动上滑跳过',
           fastQuery: true,
           activityIds: [
@@ -55,7 +55,7 @@
             
             {
               key: 1,
-              name: '跳过广告',
+              name: '上滑广告视频',
               action: 'swipe',
               swipeArg: {
                 start: {
@@ -69,11 +69,12 @@
                 duration: 100
               },
               matches: [
-                '[text*="免费看"||text*="立即跳转"||text*="微信试玩"||text*="看全集"||text*="免费观看"][visibleToUser=true]'
+                '[text="免费看"||text="立即跳转"||text="微信试玩"||text="看全集"||text="免费观看"][visibleToUser=true]'
               ],    
               actionCd:300000,
             },
            
+           #AI短剧广告上滑 (快手)          
             {
               key: 2,
               name: '上滑短视频广告',
@@ -90,7 +91,94 @@
                 duration: 100
               },
               matches: [
-                '[text*="上滑继续观看"]'
+                '[text="上滑继续观看"||"上滑继续观看视频"]'
+              ],
+            }
+          ]
+        }
+      ]
+          id: 'com.kuaishou.nebula',
+       name: '快手极速版',
+       groups: [
+        {
+          key: 1,
+          name: '快手任务广告完成后自动继续',
+          rules: [
+            
+            {
+            #广告任务领取奖励(快手极速版)
+              key: 0,
+              name: '领取成功返回',
+              action: 'back',
+              matches: ['[text="已成功领取奖励"]'],
+              activityIds: ['com.yxcorp.gifshow.ad.neo.video.award.AwardVideoPlayActivity'],
+              actionDelay: 1000
+            },
+           
+            {
+              key: 1,
+              name: '返回后点击去看广告',
+              preKeys: [0],
+              action: 'click',
+              matches: ['[text="去看广告"]'],
+              actionDelay: 1600,
+              activityIds: [
+                'com.yxcorp.gifshow.webview.KwaiYodaWebViewActivity'
+              ]
+            }
+          ]
+        },
+
+        {
+        #广告视频自动上滑(快手极速版)
+          key: 2,
+          name: '快手-自动上滑跳过',
+          fastQuery: true,
+          activityIds: [
+            'com.yxcorp.gifshow.HomeActivity',
+            'com.yxcorp.gifshow.detail.PhotoDetailActivity'
+          ],
+          rules: [
+            
+            {
+              key: 1,
+              name: '主页广告视频上滑',
+              action: 'swipe',
+              swipeArg: {
+                start: {
+                  x: '540',
+                  y: '1700'
+                },
+                end: {
+                  x: '540',
+                  y: '500'
+                },
+                duration: 100
+              },
+              matches: [
+                '[text="免费看"||text="立即跳转"||text="微信试玩"||text="看全集"||text="免费观看"][visibleToUser=true]'
+              ],    
+              actionCd:300000,
+            },
+           
+            {
+            #AI短剧广告视频上滑(快手极速版)
+              key: 2,
+              name: '上滑短视频广告',
+              action: 'swipe',
+              swipeArg: {
+                start: {
+                  x: '540',
+                  y: '1700'
+                },
+                end: {
+                  x: '540',
+                  y: '500'
+                },
+                duration: 100
+              },
+              matches: [
+                '[text="上滑继续观看"||"上滑继续观看视频"]'
               ],
             }
           ]
