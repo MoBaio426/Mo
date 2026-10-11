@@ -1,7 +1,7 @@
 {
   id: 426,
   name: '墨白',
-  version: 12,
+  version: 11,
   author: '墨白',
 
   updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5',
@@ -17,7 +17,7 @@
       groups: [
         { 
          //广告领取奖励(快手)
-         key:1
+         key:1,
           name: '快手任务广告完成后自动继续',
           rules: [
             
@@ -46,7 +46,7 @@
         
         //广告视频自动上滑(快手)
         {
-          key:2
+          key:2,
           name: '快手-自动上滑跳过',
           fastQuery: true,
           activityIds: [
