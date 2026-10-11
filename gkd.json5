@@ -1,7 +1,7 @@
 {
   id: 426,
   name: '墨白',
-  version: 12,
+  version: 11,
   author: '墨白',
 
   updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5',
@@ -76,28 +76,30 @@
            
            //AI短剧广告上滑 (快手)          
             {
-              key: 2,
-              name: '上滑短视频广告',
-              action: 'swipe',
-              swipeArg: {
-                start: {
+               key: 2,
+               name: '上滑短视频广告',
+               action: 'swipe',
+               swipeArg: {
+                 start: {
                   x: '540',
                   y: '1700'
-                },
-                end: {
+                 },
+                 end: {
                   x: '540',
                   y: '500'
-                },
-                duration: 100
-              },
-              matches: [
-                '[text="上滑继续观看"||"上滑继续观看视频"]'
-              ],
-            }
-          ]
-        }
-      ]
-          id: 'com.kuaishou.nebula',
+                 },
+                 duration: 100
+               },
+               matches: [
+                '[text="上滑继续观看"||text="上滑继续观看视频"]'
+               ],
+             }
+           ]
+         }
+       ]
+     },
+      {
+        id: 'com.kuaishou.nebula',
        name: '快手极速版',
        groups: [
         {
