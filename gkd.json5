@@ -25,7 +25,7 @@
               key: 0,
               name: '领取成功返回',
               action: 'back',
-              matches: ['[text*="已成功领取奖励"]'],
+              matches: ['[text*="已成功领取奖励"][visibleToUser=true][clickable=truel]'],
               activityIds: ['com.yxcorp.gifshow.ad.neo.video.award.AwardVideoPlayActivity'],
               actionDelay: 1000
             },
@@ -35,7 +35,7 @@
               name: '返回后点击去看广告',
               preKeys: [0],
               action: 'click',
-              matches: ['[text*="去看广告"]'],
+              matches: ['[text*="去看广告"][visibleToUser=true][clickable=truel]'],
               actionDelay: 1600,
               activityIds: [
                 'com.yxcorp.gifshow.webview.KwaiYodaWebViewActivity'
@@ -71,7 +71,7 @@
                 duration: 100
               },
               matches: [
-                '[text="免费看"||text="立即跳转"||text="微信试玩"||text="看全集"||text="免费观看"][visibleToUser=true]'
+                '[text="免费看"||text="立即跳转"||text="微信试玩"||text="看全集"||text="免费观看"][visibleToUser=true][clickable=truel]'
               ],    
               actionCd:300000,
             },
@@ -124,7 +124,7 @@
               name: '返回后点击去看广告',
               preKeys: [0],
               action: 'click',
-              matches: ['[text="去看广告"]'],
+              matches: ['[text="去看广告"][visibleToUser=true][clickable=truel]'],
               actionDelay: 1600,
               activityIds: [
                 'com.yxcorp.gifshow.webview.KwaiYodaWebViewActivity'
@@ -160,7 +160,7 @@
                 duration: 100
               },
               matches: [
-                '[text="免费看"||text="立即跳转"||text="微信试玩"||text="看全集"||text="免费观看"][visibleToUser=true]'
+                '[text="免费看"||text="立即跳转"||text="微信试玩"||text="看全集"||text="免费观看"][visibleToUser=true][clickable=truel]'
               ],    
               actionCd:300000,
             },
