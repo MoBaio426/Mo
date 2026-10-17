@@ -1,7 +1,7 @@
 {
   id: 426,
   name: '墨白',
-  version: 14,
+  version: 115,
   author: '墨白',
 
   updateUrl: 'https://raw.githubusercontent.com/MoBaio426/Mo/refs/heads/main/gkd.json5',
@@ -71,7 +71,7 @@
                 duration: 100
               },
               matches: [
-                '[text="免费看"||text="立即跳转"||text="微信试玩"||text="看全集"||text="免费观看"][visibleToUser=true][clickable=true]'
+                '[clickable=true]>n[text="免费看"||text="立即跳转"||text="微信试玩"||text="看全集"||text="免费观看"][visibleToUser=true]'
               ],    
               actionCd:300000,
             },
@@ -160,7 +160,7 @@
                 duration: 100
               },
               matches: [
-                '[text="免费看"||text="立即跳转"||text="微信试玩"||text="看全集"||text="免费观看"][visibleToUser=true][clickable=true]'
+                '[[clickable=true]>ntext="免费看"||text="立即跳转"||text="微信试玩"||text="看全集"||text="免费观看"][visibleToUser=true]'
               ],    
               actionCd:300000,
             },
