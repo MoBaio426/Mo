@@ -160,7 +160,7 @@
                 duration: 100
               },
               matches: [
-                '[[clickable=true]>ntext="免费看"||text="立即跳转"||text="微信试玩"||text="看全集"||text="免费观看"][visibleToUser=true]'
+                '[clickable=true]>n[text="免费看"||text="立即跳转"||text="微信试玩"||text="看全集"||text="免费观看"][visibleToUser=true]'
               ],    
               actionCd:300000,
             },
